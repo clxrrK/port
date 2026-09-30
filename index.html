@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Clark Kint De Nava | BSIT Student &amp; Web Developer</title>
+  <meta name="description" content="Portfolio of Clark Kint De Nava, a 3rd year BSIT student at National College of Science and Technology building modern web applications and practical software systems." />
+  <meta property="og:title" content="Clark Kint De Nava | BSIT Student &amp; Web Developer" />
+  <meta property="og:description" content="3rd year BSIT student building modern web applications and practical digital systems." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container" aria-label="Primary navigation">
+      <a href="#home" class="nav-brand">Clark Kint <span>De Nava</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+      <div class="hero-glow-follow" id="heroGlow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <!-- Hero Left Column: Introduction -->
+        <div class="hero-intro">
+          <p class="hero-eyebrow reveal" data-delay="0">
+            <span class="status-dot"></span> BSIT Student · National College of Science and Technology
+          </p>
+          <h1 class="hero-title reveal" data-delay="1">Clark Kint De Nava</h1>
+          <p class="hero-subtitle reveal" data-delay="2">3rd Year BSIT Student &amp; Web Developer</p>
+          <p class="hero-desc reveal" data-delay="3">
+            I build modern web experiences and practical digital systems — from interactive
+            front-ends to full business platforms — while continuously exploring new technologies.
+          </p>
+          <div class="hero-actions reveal" data-delay="4">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+
+          <div class="hero-pills reveal" data-delay="5">
+            <div class="hero-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <span>3rd Year BSIT · NCST</span>
+            </div>
+            <div class="hero-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>Web &amp; Software Systems</span>
+            </div>
+            <div class="hero-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <span>Database Architectures</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Featured Projects Visual Carousel -->
+        <div class="hero-carousel-col reveal" data-delay="3">
+          <div class="hero-float-badge" aria-hidden="true">
+            <span class="float-pulse"></span>
+            <span>Featured Project</span>
+          </div>
+
+          <div class="hero-carousel" id="heroCarousel" aria-roledescription="carousel" aria-label="Featured Projects Preview Carousel">
+            <div class="carousel-track" id="carouselTrack">
+
+              <!-- Carousel Slide 1: ACHILLES // ORBIT -->
+              <div class="carousel-slide active" role="group" aria-roledescription="slide" aria-label="1 of 2: ACHILLES // ORBIT" data-index="0">
+                <div class="carousel-card">
+                  <a href="https://achilles-orbit.vercel.app/" target="_blank" rel="noopener noreferrer" class="carousel-preview" aria-label="Visit ACHILLES // ORBIT live project">
+                    <div class="browser-frame">
+                      <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                      <span class="browser-url">achilles-orbit.vercel.app</span>
+                    </div>
+                    <div class="carousel-img-wrap">
+                      <img src="assets/achilles-orbit.png" alt="Preview screenshot of ACHILLES // ORBIT landing page" width="1919" height="996" />
+                      <span class="preview-overlay">
+                        <span class="preview-cta">Visit Live Site
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                  <div class="carousel-card-body">
+                    <div class="carousel-header-row">
+                      <h3 class="carousel-project-title">ACHILLES // ORBIT</h3>
+                      <span class="carousel-tag-badge">Interactive Project</span>
+                    </div>
+                    <p class="carousel-project-desc">
+                      An exploration of creative technology through an interactive orbital sculpture,
+                      spatial interfaces, and a story that unfolds as you scroll.
+                    </p>
+                    <ul class="tag-list" aria-label="Technologies used in ACHILLES // ORBIT">
+                      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vue</li><li>Tailwind CSS</li><li>Vercel</li>
+                    </ul>
+                    <div class="carousel-action-row">
+                      <a href="https://achilles-orbit.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                        View Project
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Slide 2: JMAC Enterprise -->
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 2: JMAC Enterprise" data-index="1">
+                <div class="carousel-card">
+                  <a href="https://jmac-enterprise.vercel.app/" target="_blank" rel="noopener noreferrer" class="carousel-preview" aria-label="Visit JMAC Enterprise live project">
+                    <div class="browser-frame">
+                      <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                      <span class="browser-url">jmac-enterprise.vercel.app</span>
+                    </div>
+                    <div class="carousel-img-wrap">
+                      <img src="assets/jmac-enterprise.png" alt="Preview screenshot of JMAC Enterprise platform" width="1905" height="994" />
+                      <span class="preview-overlay">
+                        <span class="preview-cta">Visit Live Site
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                  <div class="carousel-card-body">
+                    <div class="carousel-header-row">
+                      <h3 class="carousel-project-title">JMAC Enterprise</h3>
+                      <span class="carousel-tag-badge">Business Platform</span>
+                    </div>
+                    <p class="carousel-project-desc">
+                      One unified enterprise platform connecting workforce, branch operations,
+                      point of sale, employee self-service, and finance.
+                    </p>
+                    <ul class="tag-list" aria-label="Technologies used in JMAC Enterprise">
+                      <li>Vue</li><li>Tailwind CSS</li><li>PostgreSQL</li><li>Supabase</li><li>Docker</li><li>Vercel</li>
+                    </ul>
+                    <div class="carousel-action-row">
+                      <a href="https://jmac-enterprise.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                        View Project
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Carousel Bottom Controls -->
+            <div class="carousel-controls">
+              <div class="carousel-counter-group">
+                <span class="carousel-current" id="carouselCurrent">01</span>
+                <span class="carousel-separator">/</span>
+                <span class="carousel-total" id="carouselTotal">02</span>
+                <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Carousel pagination dots">
+                  <button class="carousel-dot active" role="tab" aria-selected="true" aria-label="Go to slide 1: ACHILLES // ORBIT" data-slide="0"></button>
+                  <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Go to slide 2: JMAC Enterprise" data-slide="1"></button>
+                </div>
+              </div>
+              <div class="carousel-arrow-group">
+                <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous project slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next project slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="section-tag">01 · About</span>
+          <p class="section-sub">Student, developer, and builder passionate about creating practical digital experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p>
+              I'm <strong>Clark Kint De Nava</strong>, a 3rd year Bachelor of Science in Information
+              Technology student at <strong>National College of Science and Technology</strong>.
+              I'm passionate about building modern web applications, interactive digital
+              experiences, and practical business systems that solve real problems.
+            </p>
+            <p>
+              My focus centers on combining clean, responsive front-end interfaces with well-structured
+              backend workflows and relational database architectures. Whether engineering unified enterprise
+              dashboards or experimental spatial interfaces, I strive for clarity, performance, and reliability.
+            </p>
+            <p>
+              I learn best by building — continuously experimenting with modern frameworks, shipping practical
+              software, and steadily expanding my technical toolkit across the full development lifecycle.
+            </p>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card fade-up" data-stagger="0">
+              <div class="stat-card-head">
+                <span class="stat-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </span>
+                <span class="stat-pill">Academic</span>
+              </div>
+              <span class="stat-value">3rd Year BSIT</span>
+              <span class="stat-label">National College of Science and Technology</span>
+            </div>
+
+            <div class="stat-card fade-up" data-stagger="1">
+              <div class="stat-card-head">
+                <span class="stat-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </span>
+                <span class="stat-pill">Core Focus</span>
+              </div>
+              <span class="stat-value">Web Development</span>
+              <span class="stat-label">Interactive UI, Vue &amp; Responsive Frontends</span>
+            </div>
+
+            <div class="stat-card fade-up" data-stagger="2">
+              <div class="stat-card-head">
+                <span class="stat-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </span>
+                <span class="stat-pill">Engineering</span>
+              </div>
+              <span class="stat-value">Software Systems</span>
+              <span class="stat-label">Business Platforms, POS &amp; Management Systems</span>
+            </div>
+
+            <div class="stat-card fade-up" data-stagger="3">
+              <div class="stat-card-head">
+                <span class="stat-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </span>
+                <span class="stat-pill">Data Layer</span>
+              </div>
+              <span class="stat-value">Database Systems</span>
+              <span class="stat-label">PostgreSQL, Supabase &amp; Structured Schemas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="section-tag">02 · Education</span>
+          <p class="section-sub">Academic foundation and specialized studies in Information Technology.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-badge">Currently Enrolled · 3rd Year</span>
+              <h3>National College of Science and Technology</h3>
+              <p class="timeline-degree">Bachelor of Science in Information Technology (BSIT)</p>
+              <p class="timeline-note">
+                Focusing on web development, software systems, database management, and modern application development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECH STACK ============ -->
+    <section class="section" id="tech">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="section-tag">03 · Toolkit</span>
+          <p class="section-sub">Technologies I use to design, build, and ship modern digital experiences.</p>
+        </div>
+
+        <div class="tech-group fade-up">
+          <h3 class="tech-group-title">Frontend</h3>
+          <div class="tech-grid">
+            <div class="tech-card" data-stagger="0">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#E34F26" d="M3.3 2h17.4l-1.6 18-7.1 2-7.1-2L3.3 2zm14 5.1H8.2l.3 3h8.5l-.3 3.6-4.7 1.3-4.7-1.3-.2-2.3H4.1l.4 4.5 7.5 2.1 7.5-2.1 1-10.8z"/></svg>
+              <span>HTML</span>
+            </div>
+            <div class="tech-card" data-stagger="1">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#1572B6" d="M3.3 2h17.4l-1.6 18-7.1 2-7.1-2L3.3 2zm13.6 5.1H8.4l.2 3h8l-.6 4.9-4 1.1-4-1.1-.2-2.3H4.8l.4 4.5 6.8 1.9 6.8-1.9 1.1-10.1z"/></svg>
+              <span>CSS</span>
+            </div>
+            <div class="tech-card" data-stagger="2">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#F7DF1E" d="M2 2h20v20H2z"/><path fill="#0F172A" d="M15.9 18.2c.6 1 1.4 1.7 2.8 1.7 1.2 0 1.9-.6 1.9-1.4 0-1-.8-1.3-2-1.9l-.7-.3c-2-0.9-3.4-1.9-3.4-4.2 0-2.1 1.6-3.7 4.1-3.7 1.8 0 3.1.6 4 2.3l-2.2 1.4c-.5-.9-1-1.2-1.8-1.2-.8 0-1.3.5-1.3 1.2 0 .8.5 1.2 1.7 1.7l.7.3c2.4 1 3.7 2 3.7 4.3 0 2.5-1.9 3.8-4.6 3.8-2.6 0-4.2-1.2-5-2.8l2.1-1.2zm-8.4.2c.4.7.8 1.3 1.7 1.3.9 0 1.4-.3 1.4-1.7v-9h2.7v9.1c0 2.8-1.6 4.1-4 4.1-2.2 0-3.4-1.1-4.1-2.5l2.3-1.3z"/></svg>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-card" data-stagger="3">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#38BDF8" d="M12 6c-2.7 0-4.3 1.3-5 4 1-1.3 2.2-1.8 3.5-1.5.8.2 1.3.7 1.9 1.4C13.4 11 14.5 12 17 12c2.7 0 4.3-1.3 5-4-1 1.3-2.2 1.8-3.5 1.5-.8-.2-1.3-.7-1.9-1.4C15.6 7 14.5 6 12 6zM7 12c-2.7 0-4.3 1.3-5 4 1-1.3 2.2-1.8 3.5-1.5.8.2 1.3.7 1.9 1.4C8.4 17 9.5 18 12 18c2.7 0 4.3-1.3 5-4-1 1.3-2.2 1.8-3.5 1.5-.8-.2-1.3-.7-1.9-1.4C10.6 13 9.5 12 7 12z"/></svg>
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="tech-card" data-stagger="4">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#42B883" d="M2 3h5l5 8.5L17 3h5L12 21 2 3z"/><path fill="#35495E" d="M7 3h3.5L12 6l1.5-3H17l-5 8.5L7 3z"/></svg>
+              <span>Vue.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-group fade-up">
+          <h3 class="tech-group-title">Backend / Database</h3>
+          <div class="tech-grid">
+            <div class="tech-card" data-stagger="0">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#336791" d="M12 2C7 2 6.2 4.4 6.2 6.6c0 1.6.1 3.6.1 5.1 0 .9-.7 1-1.2.5C3.6 10.8 3 8.6 3 7.1 3 4.3 4.6 2.4 7.9 2.1L12 2zm0 20c5 0 5.8-2.4 5.8-4.6 0-1.6-.1-3.6-.1-5.1 0-.9.7-1 1.2-.5 1.5 1.4 2.1 3.6 2.1 5.1 0 2.8-1.6 4.7-4.9 5L12 22z"/><circle cx="9" cy="7" r="1" fill="#fff"/><circle cx="15" cy="17" r="1" fill="#fff"/></svg>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-card" data-stagger="1">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#3ECF8E" d="M13.9 2.4c.6 0 1 .5 1 1.1v6.7h5.4c.9 0 1.4 1.1.8 1.7l-9.9 11.6c-.7.8-2.1.2-2.1-.9v-7.2H3.7c-.9 0-1.4-1.1-.8-1.7l9.9-11.5c.3-.4.7-.6 1.1-.6z"/></svg>
+              <span>Supabase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-group fade-up">
+          <h3 class="tech-group-title">Deployment / Infrastructure</h3>
+          <div class="tech-grid">
+            <div class="tech-card" data-stagger="0">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#0F172A" d="M12 3l10 18H2L12 3z"/></svg>
+              <span>Vercel</span>
+            </div>
+            <div class="tech-card" data-stagger="1">
+              <svg viewBox="0 0 24 24" class="tech-icon" aria-hidden="true"><path fill="#2496ED" d="M22 9.7c-.7-.5-2.1-.7-3.2-.4-.3-1.2-1.1-2.1-2.3-2.7l-.5-.2-.3.4c-.5.6-.8 1.5-.7 2.4.1.7.4 1.3.9 1.8l-.5.3c-.9.5-2.3.6-4.2.6H1.9c-.2 1.9.4 3.6 1.7 4.9 1.3 1.3 3.3 2 5.9 2 1.4 0 2.8-.3 4.1-.8 1.5-.6 2.8-1.5 3.9-2.7 1.2-1.2 2-2.7 2.5-4.3h.3c1 0 1.7-.4 2.2-1.2l.2-.3-.4-.1zM4.4 11h2.1v2H4.4v-2zm2.6 0h2.1v2H7v-2zm2.6 0h2.1v2H9.6v-2zm2.6 0h2.1v2h-2.1v-2zM4.4 8.5h2.1v2H4.4v-2zm2.6 0h2.1v2H7v-2zm2.6 0h2.1v2H9.6v-2zm2.6-2.6h2.1v2h-2.1v-2z"/></svg>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="section-tag">04 · Work</span>
+          <p class="section-sub">Real systems I've designed and shipped. Click a preview to visit the live site.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card fade-up">
+            <a href="https://achilles-orbit.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-preview" aria-label="Visit ACHILLES // ORBIT live website">
+              <div class="browser-frame">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">achilles-orbit.vercel.app</span>
+              </div>
+              <div class="project-img-wrap">
+                <img src="assets/achilles-orbit.png" alt="Screenshot of the ACHILLES // ORBIT landing page" loading="lazy" width="1919" height="996" />
+                <span class="preview-overlay">
+                  <span class="preview-cta">Visit Live Site
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                  </span>
+                </span>
+              </div>
+            </a>
+            <div class="project-body">
+              <h3 class="project-title">ACHILLES // ORBIT</h3>
+              <p class="project-desc">
+                An exploration of creative technology through an interactive orbital sculpture,
+                spatial interfaces, and a story that unfolds as you scroll.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Tailwind CSS</li><li>Vue</li><li>Vercel</li>
+              </ul>
+              <a href="https://achilles-orbit.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View Live Project
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card fade-up" data-stagger="1">
+            <a href="https://jmac-enterprise.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-preview" aria-label="Visit JMAC Enterprise live website">
+              <div class="browser-frame">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">jmac-enterprise.vercel.app</span>
+              </div>
+              <div class="project-img-wrap">
+                <img src="assets/jmac-enterprise.png" alt="Screenshot of the JMAC Enterprise landing page" loading="lazy" width="1905" height="994" />
+                <span class="preview-overlay">
+                  <span class="preview-cta">Visit Live Site
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                  </span>
+                </span>
+              </div>
+            </a>
+            <div class="project-body">
+              <h3 class="project-title">JMAC Enterprise</h3>
+              <p class="project-desc">
+                One unified enterprise platform connecting workforce, branch operations,
+                point of sale, employee self-service, and finance.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>Vue</li><li>Tailwind CSS</li><li>PostgreSQL</li><li>Supabase</li><li>Docker</li><li>Vercel</li>
+              </ul>
+              <a href="https://jmac-enterprise.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View Live Project
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="section-tag">05 · Contact</span>
+          <p class="section-sub">Have a project idea, collaboration, or simply want to connect? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left Column: Existing Contact Links & Availability -->
+          <div class="contact-info-col">
+            <div class="contact-cards-stack">
+              <a href="mailto:denavaclark@gmail.com" class="contact-card fade-up" data-stagger="0">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                </span>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">denavaclark@gmail.com</span>
+              </a>
+
+              <a href="https://github.com/clxrrK" target="_blank" rel="noopener noreferrer" class="contact-card fade-up" data-stagger="1">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6a11.5 11.5 0 007.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                </span>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/clxrrK</span>
+              </a>
+
+              <div class="contact-status-card fade-up" data-stagger="2">
+                <div class="contact-status-head">
+                  <span class="status-dot"></span>
+                  <span class="status-badge-text">Availability</span>
+                </div>
+                <h4 class="contact-status-title">Open for Opportunities &amp; Projects</h4>
+                <p class="contact-status-desc">
+                  Currently seeking collaborative web projects, hands-on software development,
+                  and internship opportunities. Feel free to send an email or submit the form!
+                </p>
+                <div class="contact-status-meta">
+                  <span>Based in Philippines</span>
+                  <span>·</span>
+                  <span>NCST Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-col fade-up" data-stagger="1">
+            <div class="contact-form-card">
+              <div class="contact-form-head">
+                <h3 class="form-title">Send a Message</h3>
+                <p class="form-sub">Have a question, feedback, or collaboration idea? Leave a message below.</p>
+              </div>
+
+              <!-- Live Form Alert -->
+              <div class="form-alert" id="formAlert" role="alert" aria-live="polite" style="display: none;"></div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName" class="form-label">Your Name <span class="req" aria-hidden="true">*</span></label>
+                    <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Juan dela Cruz" required autocomplete="name" />
+                    <span class="form-field-error" id="nameError"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Your Email <span class="req" aria-hidden="true">*</span></label>
+                    <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. juan@example.com" required autocomplete="email" />
+                    <span class="form-field-error" id="emailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">Subject <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="e.g. Project Inquiry or Collaboration" required />
+                  <span class="form-field-error" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Message <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                  <span class="form-field-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+              </form>
+
+              <!-- Success Card -->
+              <div class="form-success-card" id="formSuccessCard" style="display: none;">
+                <div class="success-icon-wrap" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <h4 class="success-title">Message Prepared!</h4>
+                <p class="success-desc" id="successDesc">
+                  Thank you! Your message has been prepared for sending directly to Clark.
+                </p>
+                <div class="success-actions">
+                  <a href="#" id="directMailtoBtn" class="btn btn-primary btn-sm">
+                    Open in Mail App
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                  </a>
+                  <button type="button" id="resetFormBtn" class="btn btn-ghost btn-sm">Send Another</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer fade-up">
+    <div class="container footer-inner">
+      <p>© 2026 Clark Kint De Nava. All rights reserved.</p>
+      <p class="footer-sub">Designed &amp; built with modern web technologies.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
